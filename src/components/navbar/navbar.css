@@ -1,0 +1,11 @@
+.cart-icon {
+  margin-top: 35px;
+  margin-right: 30px;
+  height: 40px;
+}
+.cart-div {
+  margin-left: auto;
+}
+.cart-Number {
+  display: flex;
+}
