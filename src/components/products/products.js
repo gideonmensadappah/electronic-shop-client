@@ -8,5 +8,5 @@ export const ProductsComponent = (prop) => {
       .then((res) => setItem(res.data))
       .catch((err) => console.log(err));
   }, [paginateNumber, setItem]);
-  return null;
+  return "";
 };
