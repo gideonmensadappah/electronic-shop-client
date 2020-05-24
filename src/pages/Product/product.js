@@ -22,7 +22,7 @@ const Product = (prop) => {
                   </div>
                 </div>
               ))
-            : null}
+            : ""}
         </div>
       </div>
     </>
