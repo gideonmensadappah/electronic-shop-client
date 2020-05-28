@@ -1,0 +1,23 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  z-index: 1;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  margin-left: 10vh;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
