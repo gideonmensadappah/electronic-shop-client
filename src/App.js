@@ -1,30 +1,33 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { NavBar } from "./components/navbar/navbar";
-import { DisplayProducts } from "./pages/displayHomeProducts/products";
-import { SideNav } from "./components/sideNav/sideNavlist";
-import { Sort } from "./components/sort/sort";
+import { Shop } from "./components/shop/shopHome/shope";
+import { LoginSystem } from "./components/loginSystem/login/login";
+import { shopCheckOut } from "./components/shop/checkout/checkOut";
+import { DisplayProducts } from "./components/shop/shopHome/displayHomeProducts/products";
+import { ProductModal } from "./components/products/ProductModal";
 
 function App() {
   return (
     <>
-      <Router>
-        <div className="header item ">
-          <NavBar />
-        </div>
-        <div className="App">
-          <div className="sideNav item">
-            <SideNav />
-          </div>
-          <div className="item-3 item ">
-            <Sort />
-          </div>
-          <div className="products item">
-            <DisplayProducts />
-          </div>
-        </div>
-      </Router>
+      <div className="header item ">
+        <NavBar />
+      </div>
+      <Switch>
+        <Route exact path="/" component={Shop} />
+        <Route
+          exact
+          path="/shop/category/:category"
+          component={DisplayProducts}
+        />
+        <Route
+          path="/shop/category/:category/:id/modal"
+          component={ProductModal}
+        />
+        <Route path="/shop/checkout" component={shopCheckOut} />
+        <Route path="/user/login" component={LoginSystem} />
+      </Switch>
     </>
   );
 }
