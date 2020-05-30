@@ -7,6 +7,7 @@ import { LoginSystem } from "./components/loginSystem/login/login";
 import { shopCheckOut } from "./components/shop/checkout/checkOut";
 import { DisplayProducts } from "./components/shop/shopHome/displayHomeProducts/products";
 import { ProductModal } from "./components/products/ProductModal";
+import { ShopppingCart } from "./components/shop/cart/shoppingCart";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           path="/shop/category/:category/:id/modal"
           component={ProductModal}
         />
-        <Route path="/shop/checkout" component={shopCheckOut} />
+        <Route path="/shop/cart" component={ShopppingCart} />
         <Route path="/user/login" component={LoginSystem} />
       </Switch>
     </>
