@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchCategories } from "../../../utils/httpFunctions";
 import { Link } from "react-router-dom";
+import imgCategory from "../../../logo512.png";
 const styles = {
   link: {
     marginLeft: "10vh",
@@ -23,11 +24,7 @@ export const ProductCategory = (props) => {
             ? categories.map((category) => (
                 <div key={category.id} className=" mt-3 col-4">
                   <div className="card" style={{ width: "18rem" }}>
-                    <img
-                      src={category.image}
-                      className="card-img-top"
-                      alt="..."
-                    />
+                    <img src={imgCategory} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">{category.category}</h5>
 

@@ -7,6 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import IconButton from "@material-ui/core/IconButton";
 import { red } from "@material-ui/core/colors";
 import { Link, withRouter } from "react-router-dom";
+import categoryImage from "../../../../logo192.png";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -49,7 +51,8 @@ function Product(props) {
                   />
                   <CardMedia
                     className={classes.media}
-                    image={product.image}
+                    image={categoryImage}
+                    // src={categoryImage}
                     title="Paella dish"
                   />
                   <CardContent>
