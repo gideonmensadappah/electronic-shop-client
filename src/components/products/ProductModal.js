@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../components/assets/img1.png";
+import ModalImage from "../assets/img1.png";
 const styles = {
   image: {
     height: "40vh",
@@ -11,7 +11,7 @@ export const ProductModal = () => {
       <div className="container mt-5">
         <div className="row">
           <div className="col-6">
-            <img style={styles.image} src={img1} alt="" srcset="" />
+            <img style={styles.image} src={ModalImage} alt="" srcset="" />
           </div>
           <div className=" col-6 info">
             <div className="title">Product Name</div>
