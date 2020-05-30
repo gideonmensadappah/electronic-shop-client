@@ -13,7 +13,7 @@ export const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link className="nav-link" to="/shop/checkout">
+              <Link className="nav-link" to="/shop/cart">
                 <span span="cart-Number">{cartNumber}</span>
                 <i className="fas fa-shopping-cart cart-icon"> </i>
               </Link>
