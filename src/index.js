@@ -6,11 +6,22 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "/Users/admin/Desktop/reactProjects/electronicShop/electronic-shop-client/node_modules/@fortawesome/fontawesome-free/css/all.css";
 import "/Users/admin/Desktop/reactProjects/electronicShop/electronic-shop-client/node_modules/bootstrap/dist/css/bootstrap.css";
+import { Provider } from "react-redux";
+import { createStore, compose } from "redux";
+import rootReducer from "./redux/reducers/index";
+
+const enhance = compose(
+  window.devToolsExtension ? window.devToolsExtension() : (f) => f
+);
+const store = createStore(rootReducer, enhance);
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
