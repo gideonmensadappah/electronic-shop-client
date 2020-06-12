@@ -1,6 +1,4 @@
 .cart-icon {
-  margin-top: 35px;
-  margin-right: 30px;
   height: 40px;
 }
 .cart-div {
@@ -8,4 +6,15 @@
 }
 .cart-Number {
   display: flex;
+}
+.shop-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+.nav-ul-right {
+  align-items: center;
 }
