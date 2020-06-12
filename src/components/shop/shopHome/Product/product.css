@@ -1,0 +1,7 @@
+.add-to-cart {
+  cursor: pointer;
+  color: #007bff;
+}
+.add-to-cart:hover {
+  color: black;
+}
